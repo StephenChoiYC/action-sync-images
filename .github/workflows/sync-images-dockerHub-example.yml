@@ -32,7 +32,7 @@ jobs:
         logout: false
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
-      run: | 
+      run: |
         #!/usr/bin/env bash
         skopeo copy docker://emby/embyserver:beta\
             docker://registry.cn-hangzhou.aliyuncs.com/canston/embyserver:beta
